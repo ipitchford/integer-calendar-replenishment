@@ -1,0 +1,6 @@
+$ /Users/admin/.cache/uv/builds-v0/.tmpG9drH0/bin/python3 -B -I /Users/admin/PublicationWork/batch-2026-10-31b/p-logistics/revised/src/independent_calendar_check.py --out /Users/admin/PublicationWork/batch-2026-10-31b/p-logistics/revised/logs/replay/20261031T215958Z/regenerated
+
+STDOUT:
+{"status": "PASS", "output": "/Users/admin/PublicationWork/batch-2026-10-31b/p-logistics/revised/logs/replay/20261031T215958Z/regenerated/independent_checks.json", "ordered_turnover_instances": 4680, "candidate_calendars": 11566, "individual_cyclic_gap_checks": 44838, "submodular_cost_instances": 14040, "exact_cost_equalities": 34698, "certified_approximation_bounds": 14040, "continuum_grid_comparisons": 14040, "saturated_subday_clocks": 2718}
+
+STDERR:

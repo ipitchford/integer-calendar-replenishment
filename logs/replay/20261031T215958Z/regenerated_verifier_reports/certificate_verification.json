@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "exact_optima": 192,
+  "integer_transition_inequalities": 48979,
+  "attaining_cycle_steps": 1873,
+  "rational_pair_allocations": 51,
+  "solver_required": false,
+  "production_module_imported": false
+}

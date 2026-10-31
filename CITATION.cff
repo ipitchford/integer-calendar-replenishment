@@ -1,0 +1,46 @@
+cff-version: 1.2.0
+message: "Please cite this versioned research candidate by its DOI."
+title: "Integer calendars for fixed-turnover replenishment: a 1/ln 2 guarantee on trees, the price of short cycles and the price of constant gaps"
+type: software
+authors:
+  - name: Anonymous
+version: 1.0.0-candidate
+doi: 10.5281/zenodo.23845965
+date-released: 2026-10-31
+repository-code: "https://github.com/ipitchford/integer-calendar-replenishment"
+url: "https://evidencepress.org/releases/integer-calendar-replenishment/"
+license:
+  - CC0-1.0
+  - MIT
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.23845965
+    description: "Version DOI (1.0.0-candidate)"
+  - type: doi
+    value: 10.5281/zenodo.23845964
+    description: "Concept DOI (all versions)"
+keywords:
+  - inventory routing
+  - fixed turnover times
+  - approximation algorithms
+  - submodular costs
+  - harmonic schedules
+abstract: "Integer-day calendars for replenishment with fixed turnover times. Rounding the event times of logarithmically phased power-of-two clocks gives a feasible calendar costing at most 1/ln 2 (about 1.4427) times the optimum for any monotone submodular daily cost, improving the factor two of Bosman et al. (2022) on trees; 1/ln 2 is exact for calendars repeating within the longest turnover time. Constant-gap calendars with dividing gaps have best worst-case factor between 1.6001 and 1.6014. Exact structural bounds and certificates included. Unrefereed candidate; internal AI-assisted review only; priority not claimed (an unobtained 2025 thesis). Text and data CC0-1.0; code MIT."
+references:
+  - type: article
+    title: "Approximation Algorithms for Replenishment Problems with Fixed Turnover Times"
+    authors:
+      - family-names: Bosman
+        given-names: Thomas
+      - family-names: van Ee
+        given-names: Martijn
+      - family-names: Jiao
+        given-names: Yang
+      - family-names: Marchetti-Spaccamela
+        given-names: Alberto
+      - family-names: Ravi
+        given-names: R.
+      - family-names: Stougie
+        given-names: Leen
+    year: 2022
+    doi: 10.1007/s00453-022-00974-4

@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "source": "data/coverage_equality_checks.json",
+  "exact_optima": 100,
+  "integer_transition_inequalities": 115378,
+  "attaining_cycle_steps": 549,
+  "individual_cyclic_gap_checks": 348,
+  "equality_cases": 58,
+  "strict_gap_cases": 42,
+  "solver_required": false,
+  "benchmark_module_imported": false,
+  "production_module_imported": false,
+  "arithmetic": "Integers and fractions.Fraction only"
+}

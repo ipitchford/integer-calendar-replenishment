@@ -1,0 +1,19 @@
+$ /Users/admin/.cache/uv/builds-v0/.tmpG9drH0/bin/python3 -B -I /Users/admin/PublicationWork/batch-2026-10-31b/p-logistics/revised/verification/coverage_equality_check.py --out /Users/admin/PublicationWork/batch-2026-10-31b/p-logistics/revised/logs/replay/20261031T215958Z/regenerated
+
+STDOUT:
+{
+  "purpose": "Bounded synthetic proof check of explicit weighted-coverage equality criterion.",
+  "seed": 20261101,
+  "cases": 100,
+  "exact_optima_certified": 100,
+  "complete_certificates_stored": 100,
+  "correct_predictions": 100,
+  "equality_cases": 58,
+  "strict_gap_cases": 42,
+  "maximum_states": 1080,
+  "maximum_arcs": 11979,
+  "overlap_six_optimum": "5/6",
+  "overlap_five_optimum": "1"
+}
+
+STDERR:

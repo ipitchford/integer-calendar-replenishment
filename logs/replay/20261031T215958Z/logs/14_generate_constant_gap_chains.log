@@ -1,0 +1,6 @@
+$ /Users/admin/.cache/uv/builds-v0/.tmpG9drH0/bin/python3 -B -I /Users/admin/PublicationWork/batch-2026-10-31b/p-logistics/revised/src/constant_gap_chains.py --out /Users/admin/PublicationWork/batch-2026-10-31b/p-logistics/revised/logs/replay/20261031T215958Z/regenerated
+
+STDOUT:
+{"upper_lp": 1.6013816744345544, "support": 17, "lower_lp": 1.6001012546230853, "star_leaves": 17}
+
+STDERR:

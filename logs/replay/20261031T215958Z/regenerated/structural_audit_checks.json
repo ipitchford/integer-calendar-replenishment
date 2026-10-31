@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "seed": 20261101,
+  "production_vs_independent_sweep_cases": 4680,
+  "two_edge_all_gap_comparisons": 3120,
+  "random_tree_certificate_checks": 750,
+  "explicit_equality_calendars_checked": 558,
+  "strict_incompatibility_penalties_checked": 192,
+  "consecutive_star_harmonic_family_checks": 63,
+  "scope": "Exact rational comparisons except the optional floating-point LP search, whose returned allocation is checked with exact fractions. No claim that these finite checks prove the general theorems."
+}

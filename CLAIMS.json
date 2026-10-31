@@ -1,0 +1,75 @@
+{
+ "schemaVersion": "1.0",
+ "release": "integer-calendar-replenishment",
+ "version": "1.0.0-candidate",
+ "doi": "10.5281/zenodo.23845965",
+ "conceptDoi": "10.5281/zenodo.23845964",
+ "creator": "Anonymous",
+ "status": "unrefereed candidate",
+ "model": "Clients i=1..n with integer turnover times tau_i; a schedule serves S_t on day t and must serve client i at least once in every tau_i consecutive days. Daily cost f(S_t) with f normalised, monotone, submodular (rooted-tree routing: f_T(S)=sum_e 2c_e [S meets D(e)]). Objective: long-run average cost; OPT is the infimum over all feasible repeating schedules (individual gaps may vary). Frequency bound L_f = sum a_i/tau_i with greedy weights a_i.",
+ "claims": [
+  {
+   "id": "C1",
+   "kind": "theorem",
+   "location": "Theorem 1; Corollary 1",
+   "statement": "A deterministic O(n log n) algorithm with n+1 oracle calls returns a feasible integer calendar with cycle P <= tau_max and average cost <= W_1 + (L_f - W_1)/ln 2 <= OPT/ln 2. On rooted trees this improves the factor 2 of Bosman et al. (2022) against the same optimum.",
+   "evidence": "written proof; independent finite checks (independent_calendar_check.py)"
+  },
+  {
+   "id": "C2",
+   "kind": "theorem",
+   "location": "Theorem 7; eq. (29); Corollary 2",
+   "statement": "sup OPT_short/OPT = 1/ln 2, where OPT_short is restricted to schedules repeating within tau_max days; the witness stars with turnovers M..2M-1 (plus an epsilon trunk) show the analysis of the full algorithm is tight on trees.",
+   "evidence": "written proof; short_cycle_budget_check.py"
+  },
+  {
+   "id": "C3",
+   "kind": "theorem",
+   "location": "Theorem 9; Lemmas 3-4; eq. (35)",
+   "statement": "Constant-gap calendars from divisor chains: mixtures give deterministic constant-gap algorithms with factors 12/7, 48/29 and <= 1.60139 (17 chains). Every calendar with integer pairwise-dividing constant gaps costs >= 1.60010 OPT on an explicit 17-leaf star. Hence 1.60010 <= rho_H <= 1.60139.",
+   "evidence": "written proof plus exact rational certificate (verify_constant_gap_chains.py, data/constant_gap_chain_certificates.json)"
+  },
+  {
+   "id": "C4",
+   "kind": "theorem",
+   "location": "Theorem 2",
+   "statement": "Exact optimum of two nested edges with maximum gaps a<=b, costs u,v: u/a+v/b + min{(a-r)u/(ab), r v/(m a b)} with b=ma+r.",
+   "evidence": "written proof; numerical and exact cross-checks"
+  },
+  {
+   "id": "C5",
+   "kind": "theorem",
+   "location": "Theorems 3 and 5",
+   "statement": "The frequency bound is attained on a tree iff q_e divides q_g for every positive-cost ancestor-descendant edge pair; for weighted coverage costs iff lcm{q_A : i in A} <= tau_i for every client.",
+   "evidence": "written proofs; 192 tree and 100 coverage exact certificates"
+  },
+  {
+   "id": "C6",
+   "kind": "theorem",
+   "location": "Theorem 4",
+   "statement": "OPT_T >= L_T + Z for the pooled pairwise LP value Z.",
+   "evidence": "written proof; rational allocations verified"
+  },
+  {
+   "id": "C7",
+   "kind": "theorem",
+   "location": "Theorems 6 and 8",
+   "statement": "Every single harmonic ladder costs >= 1 on the witness stars (ratio -> 1/ln 2); the cycle-budget profile g(h) satisfies g(B/M) <= min_{P<=B} C_M(P) <= g(B/M)+1/M.",
+   "evidence": "written proofs; finite checks"
+  },
+  {
+   "id": "C8",
+   "kind": "computation",
+   "location": "Section 5.3 Remark",
+   "statement": "On brooms, OPT_T/L_T = 9/8, 90/77, 630/529, 3780/3139 for M=2..5, so sup OPT_T/L_T >= 1.204.",
+   "evidence": "exact potential certificates (data/broom_exact_certificates.json)"
+  }
+ ],
+ "notClaimed": [
+  "historical priority",
+  "approximation hardness",
+  "any result for general metrics",
+  "operational savings",
+  "a bound for constant-gap policies whose gaps do not divide one another"
+ ]
+}

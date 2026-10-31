@@ -1,0 +1,38 @@
+[
+  {
+    "M": 2,
+    "optimum": "6",
+    "frequency_bound_L_T": "16/3",
+    "ratio_OPT_over_L_T": "9/8",
+    "ratio_float": 1.125,
+    "states": 8,
+    "arcs": 20
+  },
+  {
+    "M": 3,
+    "optimum": "6",
+    "frequency_bound_L_T": "77/15",
+    "ratio_OPT_over_L_T": "90/77",
+    "ratio_float": 1.1688311688311688,
+    "states": 90,
+    "arcs": 465
+  },
+  {
+    "M": 4,
+    "optimum": "6",
+    "frequency_bound_L_T": "529/105",
+    "ratio_OPT_over_L_T": "630/529",
+    "ratio_float": 1.1909262759924386,
+    "states": 1344,
+    "arcs": 14028
+  },
+  {
+    "M": 5,
+    "optimum": "6",
+    "frequency_bound_L_T": "3139/630",
+    "ratio_OPT_over_L_T": "3780/3139",
+    "ratio_float": 1.204205160879261,
+    "states": 25200,
+    "arcs": 529785
+  }
+]

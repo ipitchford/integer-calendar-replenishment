@@ -1,0 +1,14 @@
+$ /Users/admin/.cache/uv/builds-v0/.tmpG9drH0/bin/python3 -B -I -S -O /Users/admin/PublicationWork/batch-2026-10-31b/p-logistics/revised/verification/verify_exact_certificates.py --data /Users/admin/PublicationWork/batch-2026-10-31b/p-logistics/revised/data --report /Users/admin/PublicationWork/batch-2026-10-31b/p-logistics/revised/logs/replay/20261031T215958Z/shipped_verifier_reports/certificate_verification_O.json
+
+STDOUT:
+{
+  "status": "PASS",
+  "exact_optima": 192,
+  "integer_transition_inequalities": 48979,
+  "attaining_cycle_steps": 1873,
+  "rational_pair_allocations": 51,
+  "solver_required": false,
+  "production_module_imported": false
+}
+
+STDERR:

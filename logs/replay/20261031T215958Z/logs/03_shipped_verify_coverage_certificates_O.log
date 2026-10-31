@@ -1,0 +1,19 @@
+$ /Users/admin/.cache/uv/builds-v0/.tmpG9drH0/bin/python3 -B -I -S -O /Users/admin/PublicationWork/batch-2026-10-31b/p-logistics/revised/verification/verify_coverage_certificates.py --data /Users/admin/PublicationWork/batch-2026-10-31b/p-logistics/revised/data --report /Users/admin/PublicationWork/batch-2026-10-31b/p-logistics/revised/logs/replay/20261031T215958Z/shipped_verifier_reports/coverage_certificate_verification_O.json
+
+STDOUT:
+{
+  "status": "PASS",
+  "source": "data/coverage_equality_checks.json",
+  "exact_optima": 100,
+  "integer_transition_inequalities": 115378,
+  "attaining_cycle_steps": 549,
+  "individual_cyclic_gap_checks": 348,
+  "equality_cases": 58,
+  "strict_gap_cases": 42,
+  "solver_required": false,
+  "benchmark_module_imported": false,
+  "production_module_imported": false,
+  "arithmetic": "Integers and fractions.Fraction only"
+}
+
+STDERR:

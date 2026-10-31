@@ -1,0 +1,153 @@
+{
+  "status": "PASS",
+  "checker": "independent_calendar_check.py",
+  "independence": "Written from theorem notes; does not import or inspect the production implementation.",
+  "parameters": {
+    "max_clients": 4,
+    "max_turnover": 8,
+    "alpha_grid_steps": 128,
+    "seed": 20261031
+  },
+  "arithmetic": "fractions.Fraction for all calendar, cost, lower-bound and sharpness equalities; rigorous rational upper bound on log(2) for approximation certification; floating point only for auxiliary grid comparison and displayed ratios.",
+  "statistics": {
+    "ordered_turnover_instances": 4680,
+    "candidate_calendars": 11566,
+    "individual_cyclic_gap_checks": 44838,
+    "submodular_cost_instances": 14040,
+    "exact_cost_equalities": 34698,
+    "certified_approximation_bounds": 14040,
+    "continuum_grid_comparisons": 14040,
+    "saturated_subday_clocks": 2718
+  },
+  "worst_observed_cost_to_lower_bound": {
+    "modular": {
+      "ratio": 1.3027777777777778,
+      "turnovers": [
+        7,
+        6,
+        2,
+        5
+      ],
+      "selected_alpha": "3/2",
+      "cost": "67/24",
+      "lower_bound": "15/7"
+    },
+    "coverage": {
+      "ratio": 1.256011315417256,
+      "turnovers": [
+        7,
+        2,
+        5,
+        3
+      ],
+      "selected_alpha": "5/4",
+      "cost": "37/5",
+      "lower_bound": "707/120"
+    },
+    "binary_matroid_rank": {
+      "ratio": 1.2765957446808511,
+      "turnovers": [
+        4,
+        3,
+        5
+      ],
+      "selected_alpha": "1",
+      "cost": "1",
+      "lower_bound": "47/60"
+    }
+  },
+  "global_clock_sharpness_family": [
+    {
+      "M": 1,
+      "best_global_clock_cost": 1,
+      "true_optimum": 1.0,
+      "approximation_ratio": 1.0,
+      "checked_breakpoints": 1
+    },
+    {
+      "M": 2,
+      "best_global_clock_cost": 1,
+      "true_optimum": 0.8333333333333334,
+      "approximation_ratio": 1.2,
+      "checked_breakpoints": 2
+    },
+    {
+      "M": 4,
+      "best_global_clock_cost": 1,
+      "true_optimum": 0.7595238095238095,
+      "approximation_ratio": 1.316614420062696,
+      "checked_breakpoints": 4
+    },
+    {
+      "M": 8,
+      "best_global_clock_cost": 1,
+      "true_optimum": 0.7253718503718504,
+      "approximation_ratio": 1.3786032632605827,
+      "checked_breakpoints": 8
+    },
+    {
+      "M": 16,
+      "best_global_clock_cost": 1,
+      "true_optimum": 0.7090162022075269,
+      "approximation_ratio": 1.410405004690292,
+      "checked_breakpoints": 16
+    },
+    {
+      "M": 32,
+      "best_global_clock_cost": 1,
+      "true_optimum": 0.7010207082692489,
+      "approximation_ratio": 1.4264913834983584,
+      "checked_breakpoints": 32
+    },
+    {
+      "M": 64,
+      "best_global_clock_cost": 1,
+      "true_optimum": 0.6970686888834033,
+      "approximation_ratio": 1.4345788527696546,
+      "checked_breakpoints": 64
+    },
+    {
+      "M": 128,
+      "best_global_clock_cost": 1,
+      "true_optimum": 0.695104120228108,
+      "approximation_ratio": 1.4386333944788534,
+      "checked_breakpoints": 128
+    },
+    {
+      "M": 256,
+      "best_global_clock_cost": 1,
+      "true_optimum": 0.6941246967324427,
+      "approximation_ratio": 1.4406633342790567,
+      "checked_breakpoints": 6
+    },
+    {
+      "M": 512,
+      "best_global_clock_cost": 1,
+      "true_optimum": 0.6936357002284107,
+      "approximation_ratio": 1.4416789673177217,
+      "checked_breakpoints": 6
+    },
+    {
+      "M": 1024,
+      "best_global_clock_cost": 1,
+      "true_optimum": 0.693391380789583,
+      "approximation_ratio": 1.4421869491098573,
+      "checked_breakpoints": 6
+    },
+    {
+      "M": 2048,
+      "best_global_clock_cost": 1,
+      "true_optimum": 0.693269265773606,
+      "approximation_ratio": 1.442440981260173,
+      "checked_breakpoints": 6
+    },
+    {
+      "M": 4096,
+      "best_global_clock_cost": 1,
+      "true_optimum": 0.6932082194414856,
+      "approximation_ratio": 1.4425680076409004,
+      "checked_breakpoints": 6
+    }
+  ],
+  "limits": "Finite checks support but do not prove the theorem. The sharpness family constrains the specified global-clock family, not all algorithms. Grid comparisons are auxiliary and do not substitute for the exact breakpoint proof."
+}

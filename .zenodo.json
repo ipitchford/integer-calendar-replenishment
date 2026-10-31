@@ -1,0 +1,198 @@
+{
+  "title": "Integer calendars for fixed-turnover replenishment: a 1/ln 2 guarantee on trees, the price of short cycles and the price of constant gaps",
+  "upload_type": "publication",
+  "publication_type": "preprint",
+  "description": "<p><strong>Unrefereed research candidate.</strong> A depot must revisit every client at least once within that client's turnover time, keeping the long-run average daily routing cost low. Bosman et al. (Algorithmica, 2022) gave a factor-two approximation on trees and asked whether it can be improved. This package shows that it can: rounding the event times of real-valued power-of-two clocks (with a logarithmically chosen common phase) up to whole days gives a feasible calendar costing at most 1/ln 2 &asymp; 1.4427 times the optimum, computed deterministically in O(n log n) time, for any monotone submodular daily cost. The calendar repeats within the longest turnover time, and for such calendars 1/ln 2 is the exact worst-case price; the analysis of the algorithm is tight on trees. Individual gaps may alternate between two integers. If every client must keep a constant gap with gaps dividing one another (the form of Bosman et al.'s output), the best worst-case factor lies between 1.6001 and 1.6014 (explicit four-ladder mixture: 48/29). Also: the exact nested two-edge optimum, divisibility and lcm criteria for attaining the frequency lower bound, a pooled lower bound, the cycle-budget profile of the worst-case family, and certified instances where the optimum exceeds the frequency bound by a factor 1.204.</p><p>The archive contains the manuscript (PDF, Markdown and LaTeX), exact standard-library verifiers that do not rely on assert, 195 exact optimum certificates, exact certificates for the constant-gap bounds, 13 semantic negative controls, CI and SHA-256 sums. Assurance: written proofs and exact rational certificates; internal AI-assisted review only (not peer review, independent reproduction or formal verification). The rounding tools and the constant are classical and credited. Priority is not claimed: a 2025 DTU MSc thesis with a closely matching title could not be obtained. All instances are synthetic. Creator: Anonymous. Text and data CC0-1.0; code MIT.</p>",
+  "creators": [
+    {
+      "name": "Anonymous"
+    }
+  ],
+  "version": "1.0.0-candidate",
+  "publication_date": "2026-10-31",
+  "access_right": "open",
+  "license": "cc-zero",
+  "keywords": [
+    "inventory routing",
+    "fixed turnover times",
+    "replenishment",
+    "approximation algorithms",
+    "submodular costs",
+    "harmonic schedules",
+    "pinwheel scheduling",
+    "power-of-two policies"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/ipitchford/integer-calendar-replenishment/tree/v1.0.0-candidate",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://evidencepress.org/releases/integer-calendar-replenishment/",
+      "relation": "isDocumentedBy",
+      "scheme": "url"
+    },
+    {
+      "identifier": "10.1016/S0166-218X(97)00119-4",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1287/moor.27.3.518.314",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1145/1644015.1644028",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1287/opre.2019.1847",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1007/s10951-014-0392-y",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1007/978-3-030-45771-6_8",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1007/978-3-319-77404-6_17",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1007/s00453-022-00974-4",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1109/12.144627",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1007/BF01187034",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1007/s10107-015-0920-3",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1287/trsc.2013.0472",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1016/S1665-6423(13)71551-7",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1287/opre.40.2.384",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1287/mnsc.39.6.710",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.46298/dmtcs.17657",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1016/j.jcss.2023.103476",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1109/REAL.1992.242649",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1109/12.508320",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1109/hicss.1989.48075",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1145/3618260.3649757",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1145/321738.321743",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1007/s11241-018-9304-0",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1007/s10107-016-0981-y",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1142/S1793830909000130",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1287/mnsc.31.11.1416",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1287/mnsc.35.12.1433",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1287/opre.49.4.599.11222",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1016/j.orl.2021.07.001",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1287/msom.2017.0656",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "arXiv:2603.18720",
+      "relation": "references",
+      "scheme": "arxiv"
+    },
+    {
+      "identifier": "arXiv:2302.03724",
+      "relation": "references",
+      "scheme": "arxiv"
+    }
+  ],
+  "notes": "Code (all .py files and the CI workflow) is MIT; prose, manuscript, figures and data are CC0-1.0. Version DOI 10.5281/zenodo.23845965; concept DOI 10.5281/zenodo.23845964."
+}

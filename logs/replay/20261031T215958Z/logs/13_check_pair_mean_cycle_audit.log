@@ -1,0 +1,6 @@
+$ /Users/admin/.cache/uv/builds-v0/.tmpG9drH0/bin/python3 -B -I /Users/admin/PublicationWork/batch-2026-10-31b/p-logistics/revised/verification/pair_mean_cycle_audit.py
+
+STDOUT:
+{'tested': 532, 'max_abs_error': 1.7763568394002505e-15}
+
+STDERR:

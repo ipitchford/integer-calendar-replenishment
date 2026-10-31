@@ -1,0 +1,5 @@
+# Recorded versions for optional certificate generation and figures.
+# The calendar solver and all certificate verifiers use only the standard library.
+numpy==2.3.5
+scipy==1.17.0
+matplotlib==3.10.8

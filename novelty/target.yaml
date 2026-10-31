@@ -1,0 +1,91 @@
+target_id: integer-calendar-submodular-replenishment
+search_date: 2026-10-31
+intended_contribution_unit: theorem-and-algorithm
+claim:
+  exact_statement: |
+    Given n clients with positive integer maximum inter-visit gaps tau_i and
+    a normalised nonnegative monotone submodular daily service cost f, construct
+    in polynomial time a cyclic integer-day schedule of average cost at most
+    (1/log(2)) times the minimum over feasible cyclic schedules. The returned
+    schedule has an arithmetic descriptor and a cycle length at most max_i tau_i.
+    For a rooted weighted tree, f(S) is twice the total edge length in the
+    root-to-S subtree. The algorithm uses rational shifted dyadic periods,
+    calendar rounding, and an exact finite breakpoint sweep.
+  exclusions:
+    - No claim to solve exact min-average complexity on trees.
+    - No improvement claimed for maximum daily route cost, vehicle capacity,
+      route duration, stochastic demand or general-metric routing.
+    - The logarithmic-shift rounding method and constant are classical.
+    - A cyclic calendar need not have constant gaps for every individual client.
+    - Failure to find prior art is not a certificate of historical priority.
+source:
+  originating_reference: Bosman et al. (2022), Algorithmica 84, 2597-2621, Section 5
+  url: https://doi.org/10.1007/s00453-022-00974-4
+normalisation:
+  indices: Integer days t >= 1; rolling windows of tau_i consecutive days
+  scaling: Edge costs doubled for rooted closed tree tours
+  basis_order: Clients in nondecreasing turnover order; equal values grouped
+  symmetries: [common time translation, common dyadic period rescaling]
+formulas:
+  rounded_period: p_i(alpha)=alpha*2^floor(log2(tau_i/alpha)), 1 <= alpha < 2
+  service_days: ceil(k*p_i), k=1,2,...; duplicates on one day coalesced
+  membership: floor(t/p_i)>floor((t-1)/p_i)
+  frequency: min(1,1/p_i)
+  tree_bound: L=2*sum_e c_e/min_{i below e}(tau_i)
+  submodular_bound: L=sum_i [f(S_i)-f(S_{i-1})]/tau_i
+  expectation: E_alpha[1/p_i]=1/(tau_i*log(2)), density 1/(alpha*log(2))
+  candidates: alpha_i=tau_i/2^floor(log2(tau_i))
+small_instances:
+  - tau: [1]
+    optimum: '1 for unit per-visit cost'
+    returned_cost: '1'
+  - tau: [2,3]
+    unit_modular_lower_bound: '5/6'
+    returned_best_cost: '1'
+    calendars_at_alpha_3_over_2: ['p=3/2, visits 2,3,5,6,...', 'p=3, visits 3,6,...']
+  - tau: [4,5,6,7]
+    unit_modular_lower_bound: '319/420'
+    returned_best_cost: '1'
+sequences:
+  - name: uniform-star-lower-bound
+    exact_values: ['1','5/6','319/420']
+    natural_scalings: ['sum_{q=M}^{2M-1}(1/q), M=1,2,4,...']
+generating_functions: []
+matrices: []
+aliases:
+  analysis: [Lovasz extension, layer-cake integral, mechanical words]
+  probability: [random logarithmic shift, shared random rounding]
+  combinatorics: [harmonic scheduling, pinwheel scheduling, recurrent tasks]
+  mathematical_physics: [synchronised clocks, commensurable periods]
+  statistics_optimisation_ml: [joint replenishment, power-of-two policies,
+    submodular ordering cost, fixed turnover, inventory routing,
+    Beatty schedules, balanced calendars]
+known_invariants:
+  harmonic_nesting: p_j/p_i is a power of two whenever tau_j >= tau_i
+  integer_calendar_nesting: service set of longer period contained in shorter
+  best_breakpoint_cycle: P=max_i p_i is integer and P <= max_i tau_i
+  computational_complexity: O(n log n) arithmetic operations and O(n) oracle queries
+search_constraints:
+  primary_sources_only_for_technical_claims: true
+  databases_or_corpora: [public web search, arXiv, publisher pages, institutional repositories]
+priority_risks:
+  - Classical inventory rounding may subsume part or all of the statement.
+  - Hans Henrik Hermansen Spring 2025 DTU MSc thesis has identical title to originating paper; contents not yet obtained.
+release_extensions:
+  version: '1.0 (2026-10-31)'
+  structural_search_record: novelty/structural_prior_art.md
+  short_cycle_claim: |
+    The supremum of OPT_short / OPT, where OPT_short permits only integer
+    global cycle lengths P <= max_i tau_i and OPT permits arbitrary repeating
+    rolling-window calendars, is exactly 1/log(2). The lower bound already
+    holds on modular-cost stars with tau=M,...,2M-1 and unit leaf cost.
+  finite_cycle_formula: 'C_M(P)=(1/P)*sum_{q=M}^{2M-1} ceil(P/q)'
+  limiting_cycle_profile: 'g(h)=(1/h)*integral_1^2 ceil(h/x) dx'
+  uniform_profile_bound: 'g(B/M) <= min_{P<=B} C_M(P) <= g(B/M)+1/M'
+  coverage_equality: 'lcm{q_A : i in A} <= tau_i for every client i, q_A=min_{j in A} tau_j'
+  tree_equality: 'q_e divides q_f for every positive-cost ancestor-descendant pair (e,f)'
+  sweep_prior_art_status: 'COLLISION: Han-Tyan S_r as reproduced by Diaz-Ramirez et al. (2013)'
+  originality_boundary: |
+    No independent novelty claim for logarithmic shifting, submodular chain
+    weights, the numerical constant, or the phase sweep. Candidate contribution:
+    integer calendar realisation, sharp cycle restriction, and structural bounds.

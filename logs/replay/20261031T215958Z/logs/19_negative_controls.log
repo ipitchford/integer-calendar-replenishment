@@ -1,0 +1,44 @@
+$ /Users/admin/.cache/uv/builds-v0/.tmpG9drH0/bin/python3 -B -I /Users/admin/PublicationWork/batch-2026-10-31b/p-logistics/revised/verification/negative_controls.py --data /Users/admin/PublicationWork/batch-2026-10-31b/p-logistics/revised/data --report /Users/admin/PublicationWork/batch-2026-10-31b/p-logistics/revised/logs/replay/20261031T215958Z/negative_controls.json
+
+STDOUT:
+T0_pristine                                tree        exit=0 expected=accept OK  
+T0_pristine                                tree     -O exit=0 expected=accept OK  
+T0_pristine                                coverage    exit=0 expected=accept OK  
+T0_pristine                                coverage -O exit=0 expected=accept OK  
+T1_tree_optimum_raised                     tree        exit=1 expected=reject OK  CHECK FAILED: 2_star_00: failed integer potential inequality on arc 1->5
+T1_tree_optimum_raised                     tree     -O exit=1 expected=reject OK  CHECK FAILED: 2_star_00: failed integer potential inequality on arc 1->5
+T2_tree_potential_entry_perturbed          tree        exit=1 expected=reject OK  CHECK FAILED: 2_star_00: failed integer potential inequality on arc 0->1
+T2_tree_potential_entry_perturbed          tree     -O exit=1 expected=reject OK  CHECK FAILED: 2_star_00: failed integer potential inequality on arc 0->1
+T3_tree_cycle_action_altered               tree        exit=1 expected=reject OK  CHECK FAILED: 2_star_00: attaining cycle does not close at step 0
+T3_tree_cycle_action_altered               tree     -O exit=1 expected=reject OK  CHECK FAILED: 2_star_00: attaining cycle does not close at step 0
+T4_tree_cycle_truncated                    tree        exit=1 expected=reject OK  CHECK FAILED: 2_star_00: attaining cycle does not close at step 10
+T4_tree_cycle_truncated                    tree     -O exit=1 expected=reject OK  CHECK FAILED: 2_star_00: attaining cycle does not close at step 10
+T5_tree_optimum_lowered_zero_potential     tree        exit=1 expected=reject OK  CHECK FAILED: 2_star_00: failed integer potential inequality on arc 0->1
+T5_tree_optimum_lowered_zero_potential     tree     -O exit=1 expected=reject OK  CHECK FAILED: 2_star_00: failed integer potential inequality on arc 0->1
+T6_tree_pair_penalty_x100                  tree        exit=1 expected=reject OK  CHECK FAILED: 2_path_04: pair (0,1) allocation inconsistent with penalty
+T6_tree_pair_penalty_x100                  tree     -O exit=1 expected=reject OK  CHECK FAILED: 2_path_04: pair (0,1) allocation inconsistent with penalty
+T7_tree_noninteger_potential               tree        exit=1 expected=reject OK  CHECK FAILED: 2_star_00: potentials must be integers
+T7_tree_noninteger_potential               tree     -O exit=1 expected=reject OK  CHECK FAILED: 2_star_00: potentials must be integers
+C1_coverage_optimum_raised                 coverage    exit=1 expected=reject OK  CHECK FAILED: overlap_six: failed integer potential inequality
+C1_coverage_optimum_raised                 coverage -O exit=1 expected=reject OK  CHECK FAILED: overlap_six: failed integer potential inequality
+C2_coverage_potential_entry_perturbed      coverage    exit=1 expected=reject OK  CHECK FAILED: overlap_six: failed integer potential inequality
+C2_coverage_potential_entry_perturbed      coverage -O exit=1 expected=reject OK  CHECK FAILED: overlap_six: failed integer potential inequality
+C3_coverage_cycle_action_altered           coverage    exit=1 expected=reject OK  CHECK FAILED: overlap_six: cycle does not close
+C3_coverage_cycle_action_altered           coverage -O exit=1 expected=reject OK  CHECK FAILED: overlap_six: cycle does not close
+C4_coverage_prediction_flipped             coverage    exit=1 expected=reject OK  CHECK FAILED: overlap_six: equality prediction mismatch
+C4_coverage_prediction_flipped             coverage -O exit=1 expected=reject OK  CHECK FAILED: overlap_six: equality prediction mismatch
+C5_coverage_lower_bound_altered            coverage    exit=1 expected=reject OK  CHECK FAILED: overlap_six: invalid elementary lower bound
+C5_coverage_lower_bound_altered            coverage -O exit=1 expected=reject OK  CHECK FAILED: overlap_six: invalid elementary lower bound
+C6_coverage_summary_count_altered          coverage    exit=1 expected=reject OK  CHECK FAILED: Equality summary mismatch
+C6_coverage_summary_count_altered          coverage -O exit=1 expected=reject OK  CHECK FAILED: Equality summary mismatch
+{
+  "status": "PASS",
+  "controls": 13,
+  "verifier_runs": 30,
+  "rejections_confirmed": 26,
+  "pristine_acceptances_confirmed": 4,
+  "failures": [],
+  "source_data": "/Users/admin/PublicationWork/batch-2026-10-31b/p-logistics/revised/data"
+}
+
+STDERR:

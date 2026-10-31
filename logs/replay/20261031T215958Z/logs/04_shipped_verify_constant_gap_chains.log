@@ -1,0 +1,48 @@
+$ /Users/admin/.cache/uv/builds-v0/.tmpG9drH0/bin/python3 -B -I -S /Users/admin/PublicationWork/batch-2026-10-31b/p-logistics/revised/verification/verify_constant_gap_chains.py --data /Users/admin/PublicationWork/batch-2026-10-31b/p-logistics/revised/data --report /Users/admin/PublicationWork/batch-2026-10-31b/p-logistics/revised/logs/replay/20261031T215958Z/shipped_verifier_reports/constant_gap_chain_verification.json
+
+STDOUT:
+{
+  "status": "PASS",
+  "two_chain_bound": "12/7",
+  "four_chain_bound": "48/29",
+  "certified_upper_bound": "55486333043229976704266773460180747696189495197116005569750791834799398428909504497833/34649037096160917826022685399697146517875260802044573319485242768782998623448543218240",
+  "certified_upper_bound_float": 1.6013816744528757,
+  "upper_support_size": 17,
+  "upper_attained_at": "q=9",
+  "certified_lower_bound": "189782238959657567625167539601519637505707821931098632177330816098937682995398050807677/118606393446919823628481428964849403241926568834406894008280066758013064074749976669535",
+  "certified_lower_bound_float": 1.6001012546139954,
+  "lower_bound_star_turnovers": [
+    2,
+    4,
+    5,
+    7,
+    9,
+    11,
+    15,
+    23,
+    31,
+    47,
+    63,
+    95,
+    127,
+    191,
+    255,
+    383,
+    511
+  ],
+  "chains_enumerated_for_lower_bound": 15374,
+  "lower_bound_cap": 511,
+  "minimising_chain": [
+    1,
+    2,
+    6,
+    12,
+    24,
+    48,
+    240,
+    480
+  ],
+  "solver_required": false
+}
+
+STDERR:

@@ -1,0 +1,8 @@
+Local clean replay (31 October 2026): macOS (arm64), uv-managed CPython 3.11.14.
+Exact verifiers, calendar code and negative controls: python3 -B -I [-S] [-O] <script>.py  (standard library only)
+Generators: uv run --no-project --with numpy==2.3.5 --with scipy==1.17.0 python3 -B -I <script>.py --out <dir>
+Figures: matplotlib==3.10.8 (python3 src/make_figures.py)
+Full sequence: uv run --no-project --with numpy==2.3.5 --with scipy==1.17.0 python3 -B verification/run_verification.py
+CI: GitHub Actions ubuntu-latest, CPython 3.11, pip install -r requirements.txt (.github/workflows/replay.yml).
+Manuscript: Pandoc with LuaLaTeX (TinyTeX, TeX Live 2026) from paper/integer_calendar_replenishment.md.
+Figures (PDF/PNG) are not byte-reproducible across platforms. LP-proposed weights may differ across platforms; every certified bound is recomputed exactly.

@@ -1,0 +1,456 @@
+{
+  "status": "PASS",
+  "problems": [],
+  "run_id": "20261031T215958Z",
+  "started_utc": "2026-10-31T21:59:58.086479+00:00",
+  "finished_utc": "2026-10-31T22:00:24.163237+00:00",
+  "python": "3.11.14",
+  "python_implementation": "CPython",
+  "python_executable": "/Users/admin/.cache/uv/builds-v0/.tmpG9drH0/bin/python3",
+  "platform": "macOS-27.0.1-arm64-arm-64bit",
+  "packages": {
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "matplotlib": null
+  },
+  "driver_argv": [
+    "/Users/admin/.cache/uv/builds-v0/.tmpG9drH0/bin/python3",
+    "verification/run_verification.py"
+  ],
+  "working_directory": "/Users/admin/PublicationWork/batch-2026-10-31b/p-logistics/revised",
+  "replay_directory": "logs/replay/20261031T215958Z",
+  "shipped_data_sha256": {
+    "data/broom_exact_certificates.json": "e966fde4ad56ac4a0e4b6758ebff7d9b8d027c2ca3a47ae6020a47e4f697881d",
+    "data/broom_summary.json": "b3bfe72d08911f2e703ec78b0633fa30c5d540c22e444cbe2b82af145f878ec7",
+    "data/certificate_verification.json": "1632b8191b18407aee9dc6c184b7014b550ca927e4e1ec33af8e5521926adb25",
+    "data/constant_gap_chain_certificates.json": "c515df7b66a70ebca28681c4ba6aaefde57adcf84115b2009c2a1d8121af9cdb",
+    "data/coverage_certificate_verification.json": "7fbbcf07649748023e9fae52288fc938743ffb96462dfbb0fc48ea4a582ec0e4",
+    "data/coverage_equality_checks.json": "8bd40a3d44b097d6642f4471875aec06360e7d9fcf7de8595402b17d250d9de9",
+    "data/independent_checks.json": "3f1290713450adb56e9a90f045dd5cb49420f60a349a2c6d0cea4db60675f87b",
+    "data/period_budget_limit.csv": "346c79b515cd477d1bd6c913c4f48e17e6d02334bc7df0cf866de070d245429d",
+    "data/short_cycle_budget_checks.json": "11489f8b015d1fd5d00940f4909b3a97e12c7dcae5d887e67b9300ea8baa04a1",
+    "data/small_tree_benchmark.csv": "53fc861d7851405407c6af009e925f8a7a25c134330801263cec980c057cb03c",
+    "data/small_tree_benchmark.json": "b57bd56f078bd1827a1780ddee634e508e344df8ac02731d14850c533c2d7e5f",
+    "data/small_tree_exact_certificates.json": "0a5feefe72947ea7f68e942c1577dc7f5094c813473fe8d7bb3203c1bcd4abb2",
+    "data/structural_audit_checks.json": "3234d03ae954abb85a4c849033309704013193d7e656f08721f50d27d8a5faea"
+  },
+  "shipped_data_unchanged": true,
+  "commands": [
+    {
+      "label": "shipped_verify_exact_certificates",
+      "argv": [
+        "/Users/admin/.cache/uv/builds-v0/.tmpG9drH0/bin/python3",
+        "-B",
+        "-I",
+        "-S",
+        "/Users/admin/PublicationWork/batch-2026-10-31b/p-logistics/revised/verification/verify_exact_certificates.py",
+        "--data",
+        "/Users/admin/PublicationWork/batch-2026-10-31b/p-logistics/revised/data",
+        "--report",
+        "/Users/admin/PublicationWork/batch-2026-10-31b/p-logistics/revised/logs/replay/20261031T215958Z/shipped_verifier_reports/certificate_verification.json"
+      ],
+      "cwd": "/Users/admin/PublicationWork/batch-2026-10-31b/p-logistics/revised",
+      "exit_status": 0,
+      "ok": true,
+      "elapsed_seconds": 0.1285,
+      "log": "logs/replay/20261031T215958Z/logs/00_shipped_verify_exact_certificates.log"
+    },
+    {
+      "label": "shipped_verify_exact_certificates_O",
+      "argv": [
+        "/Users/admin/.cache/uv/builds-v0/.tmpG9drH0/bin/python3",
+        "-B",
+        "-I",
+        "-S",
+        "-O",
+        "/Users/admin/PublicationWork/batch-2026-10-31b/p-logistics/revised/verification/verify_exact_certificates.py",
+        "--data",
+        "/Users/admin/PublicationWork/batch-2026-10-31b/p-logistics/revised/data",
+        "--report",
+        "/Users/admin/PublicationWork/batch-2026-10-31b/p-logistics/revised/logs/replay/20261031T215958Z/shipped_verifier_reports/certificate_verification_O.json"
+      ],
+      "cwd": "/Users/admin/PublicationWork/batch-2026-10-31b/p-logistics/revised",
+      "exit_status": 0,
+      "ok": true,
+      "elapsed_seconds": 0.1272,
+      "log": "logs/replay/20261031T215958Z/logs/01_shipped_verify_exact_certificates_O.log"
+    },
+    {
+      "label": "shipped_verify_coverage_certificates",
+      "argv": [
+        "/Users/admin/.cache/uv/builds-v0/.tmpG9drH0/bin/python3",
+        "-B",
+        "-I",
+        "-S",
+        "/Users/admin/PublicationWork/batch-2026-10-31b/p-logistics/revised/verification/verify_coverage_certificates.py",
+        "--data",
+        "/Users/admin/PublicationWork/batch-2026-10-31b/p-logistics/revised/data",
+        "--report",
+        "/Users/admin/PublicationWork/batch-2026-10-31b/p-logistics/revised/logs/replay/20261031T215958Z/shipped_verifier_reports/coverage_certificate_verification.json"
+      ],
+      "cwd": "/Users/admin/PublicationWork/batch-2026-10-31b/p-logistics/revised",
+      "exit_status": 0,
+      "ok": true,
+      "elapsed_seconds": 0.2295,
+      "log": "logs/replay/20261031T215958Z/logs/02_shipped_verify_coverage_certificates.log"
+    },
+    {
+      "label": "shipped_verify_coverage_certificates_O",
+      "argv": [
+        "/Users/admin/.cache/uv/builds-v0/.tmpG9drH0/bin/python3",
+        "-B",
+        "-I",
+        "-S",
+        "-O",
+        "/Users/admin/PublicationWork/batch-2026-10-31b/p-logistics/revised/verification/verify_coverage_certificates.py",
+        "--data",
+        "/Users/admin/PublicationWork/batch-2026-10-31b/p-logistics/revised/data",
+        "--report",
+        "/Users/admin/PublicationWork/batch-2026-10-31b/p-logistics/revised/logs/replay/20261031T215958Z/shipped_verifier_reports/coverage_certificate_verification_O.json"
+      ],
+      "cwd": "/Users/admin/PublicationWork/batch-2026-10-31b/p-logistics/revised",
+      "exit_status": 0,
+      "ok": true,
+      "elapsed_seconds": 0.2249,
+      "log": "logs/replay/20261031T215958Z/logs/03_shipped_verify_coverage_certificates_O.log"
+    },
+    {
+      "label": "shipped_verify_constant_gap_chains",
+      "argv": [
+        "/Users/admin/.cache/uv/builds-v0/.tmpG9drH0/bin/python3",
+        "-B",
+        "-I",
+        "-S",
+        "/Users/admin/PublicationWork/batch-2026-10-31b/p-logistics/revised/verification/verify_constant_gap_chains.py",
+        "--data",
+        "/Users/admin/PublicationWork/batch-2026-10-31b/p-logistics/revised/data",
+        "--report",
+        "/Users/admin/PublicationWork/batch-2026-10-31b/p-logistics/revised/logs/replay/20261031T215958Z/shipped_verifier_reports/constant_gap_chain_verification.json"
+      ],
+      "cwd": "/Users/admin/PublicationWork/batch-2026-10-31b/p-logistics/revised",
+      "exit_status": 0,
+      "ok": true,
+      "elapsed_seconds": 0.8703,
+      "log": "logs/replay/20261031T215958Z/logs/04_shipped_verify_constant_gap_chains.log"
+    },
+    {
+      "label": "shipped_verify_broom_certificates",
+      "argv": [
+        "/Users/admin/.cache/uv/builds-v0/.tmpG9drH0/bin/python3",
+        "-B",
+        "-I",
+        "-S",
+        "/Users/admin/PublicationWork/batch-2026-10-31b/p-logistics/revised/verification/verify_exact_certificates.py",
+        "--certificates",
+        "/Users/admin/PublicationWork/batch-2026-10-31b/p-logistics/revised/data/broom_exact_certificates.json",
+        "--report",
+        "/Users/admin/PublicationWork/batch-2026-10-31b/p-logistics/revised/logs/replay/20261031T215958Z/shipped_verifier_reports/broom_certificate_verification.json"
+      ],
+      "cwd": "/Users/admin/PublicationWork/batch-2026-10-31b/p-logistics/revised",
+      "exit_status": 0,
+      "ok": true,
+      "elapsed_seconds": 1.0517,
+      "log": "logs/replay/20261031T215958Z/logs/05_shipped_verify_broom_certificates.log"
+    },
+    {
+      "label": "shipped_verify_constant_gap_chains_O",
+      "argv": [
+        "/Users/admin/.cache/uv/builds-v0/.tmpG9drH0/bin/python3",
+        "-B",
+        "-I",
+        "-S",
+        "-O",
+        "/Users/admin/PublicationWork/batch-2026-10-31b/p-logistics/revised/verification/verify_constant_gap_chains.py",
+        "--data",
+        "/Users/admin/PublicationWork/batch-2026-10-31b/p-logistics/revised/data",
+        "--report",
+        "/Users/admin/PublicationWork/batch-2026-10-31b/p-logistics/revised/logs/replay/20261031T215958Z/shipped_verifier_reports/constant_gap_chain_verification_O.json"
+      ],
+      "cwd": "/Users/admin/PublicationWork/batch-2026-10-31b/p-logistics/revised",
+      "exit_status": 0,
+      "ok": true,
+      "elapsed_seconds": 0.7748,
+      "log": "logs/replay/20261031T215958Z/logs/06_shipped_verify_constant_gap_chains_O.log"
+    },
+    {
+      "label": "shipped_verify_broom_certificates_O",
+      "argv": [
+        "/Users/admin/.cache/uv/builds-v0/.tmpG9drH0/bin/python3",
+        "-B",
+        "-I",
+        "-S",
+        "-O",
+        "/Users/admin/PublicationWork/batch-2026-10-31b/p-logistics/revised/verification/verify_exact_certificates.py",
+        "--certificates",
+        "/Users/admin/PublicationWork/batch-2026-10-31b/p-logistics/revised/data/broom_exact_certificates.json",
+        "--report",
+        "/Users/admin/PublicationWork/batch-2026-10-31b/p-logistics/revised/logs/replay/20261031T215958Z/shipped_verifier_reports/broom_certificate_verification_O.json"
+      ],
+      "cwd": "/Users/admin/PublicationWork/batch-2026-10-31b/p-logistics/revised",
+      "exit_status": 0,
+      "ok": true,
+      "elapsed_seconds": 1.0374,
+      "log": "logs/replay/20261031T215958Z/logs/07_shipped_verify_broom_certificates_O.log"
+    },
+    {
+      "label": "generate_independent_calendar_check",
+      "argv": [
+        "/Users/admin/.cache/uv/builds-v0/.tmpG9drH0/bin/python3",
+        "-B",
+        "-I",
+        "/Users/admin/PublicationWork/batch-2026-10-31b/p-logistics/revised/src/independent_calendar_check.py",
+        "--out",
+        "/Users/admin/PublicationWork/batch-2026-10-31b/p-logistics/revised/logs/replay/20261031T215958Z/regenerated"
+      ],
+      "cwd": "/Users/admin/PublicationWork/batch-2026-10-31b/p-logistics/revised",
+      "exit_status": 0,
+      "ok": true,
+      "elapsed_seconds": 2.8189,
+      "log": "logs/replay/20261031T215958Z/logs/08_generate_independent_calendar_check.log"
+    },
+    {
+      "label": "generate_structural_audit_checks",
+      "argv": [
+        "/Users/admin/.cache/uv/builds-v0/.tmpG9drH0/bin/python3",
+        "-B",
+        "-I",
+        "/Users/admin/PublicationWork/batch-2026-10-31b/p-logistics/revised/verification/structural_audit_checks.py",
+        "--out",
+        "/Users/admin/PublicationWork/batch-2026-10-31b/p-logistics/revised/logs/replay/20261031T215958Z/regenerated"
+      ],
+      "cwd": "/Users/admin/PublicationWork/batch-2026-10-31b/p-logistics/revised",
+      "exit_status": 0,
+      "ok": true,
+      "elapsed_seconds": 1.2228,
+      "log": "logs/replay/20261031T215958Z/logs/09_generate_structural_audit_checks.log"
+    },
+    {
+      "label": "generate_benchmark_small_trees",
+      "argv": [
+        "/Users/admin/.cache/uv/builds-v0/.tmpG9drH0/bin/python3",
+        "-B",
+        "-I",
+        "/Users/admin/PublicationWork/batch-2026-10-31b/p-logistics/revised/src/benchmark_small_trees.py",
+        "--out",
+        "/Users/admin/PublicationWork/batch-2026-10-31b/p-logistics/revised/logs/replay/20261031T215958Z/regenerated"
+      ],
+      "cwd": "/Users/admin/PublicationWork/batch-2026-10-31b/p-logistics/revised",
+      "exit_status": 0,
+      "ok": true,
+      "elapsed_seconds": 1.502,
+      "log": "logs/replay/20261031T215958Z/logs/10_generate_benchmark_small_trees.log"
+    },
+    {
+      "label": "generate_coverage_equality_check",
+      "argv": [
+        "/Users/admin/.cache/uv/builds-v0/.tmpG9drH0/bin/python3",
+        "-B",
+        "-I",
+        "/Users/admin/PublicationWork/batch-2026-10-31b/p-logistics/revised/verification/coverage_equality_check.py",
+        "--out",
+        "/Users/admin/PublicationWork/batch-2026-10-31b/p-logistics/revised/logs/replay/20261031T215958Z/regenerated"
+      ],
+      "cwd": "/Users/admin/PublicationWork/batch-2026-10-31b/p-logistics/revised",
+      "exit_status": 0,
+      "ok": true,
+      "elapsed_seconds": 4.6463,
+      "log": "logs/replay/20261031T215958Z/logs/11_generate_coverage_equality_check.log"
+    },
+    {
+      "label": "generate_short_cycle_budget_check",
+      "argv": [
+        "/Users/admin/.cache/uv/builds-v0/.tmpG9drH0/bin/python3",
+        "-B",
+        "-I",
+        "/Users/admin/PublicationWork/batch-2026-10-31b/p-logistics/revised/verification/short_cycle_budget_check.py",
+        "--out",
+        "/Users/admin/PublicationWork/batch-2026-10-31b/p-logistics/revised/logs/replay/20261031T215958Z/regenerated"
+      ],
+      "cwd": "/Users/admin/PublicationWork/batch-2026-10-31b/p-logistics/revised",
+      "exit_status": 0,
+      "ok": true,
+      "elapsed_seconds": 0.0848,
+      "log": "logs/replay/20261031T215958Z/logs/12_generate_short_cycle_budget_check.log"
+    },
+    {
+      "label": "check_pair_mean_cycle_audit",
+      "argv": [
+        "/Users/admin/.cache/uv/builds-v0/.tmpG9drH0/bin/python3",
+        "-B",
+        "-I",
+        "/Users/admin/PublicationWork/batch-2026-10-31b/p-logistics/revised/verification/pair_mean_cycle_audit.py"
+      ],
+      "cwd": "/Users/admin/PublicationWork/batch-2026-10-31b/p-logistics/revised",
+      "exit_status": 0,
+      "ok": true,
+      "elapsed_seconds": 0.7689,
+      "log": "logs/replay/20261031T215958Z/logs/13_check_pair_mean_cycle_audit.log"
+    },
+    {
+      "label": "generate_constant_gap_chains",
+      "argv": [
+        "/Users/admin/.cache/uv/builds-v0/.tmpG9drH0/bin/python3",
+        "-B",
+        "-I",
+        "/Users/admin/PublicationWork/batch-2026-10-31b/p-logistics/revised/src/constant_gap_chains.py",
+        "--out",
+        "/Users/admin/PublicationWork/batch-2026-10-31b/p-logistics/revised/logs/replay/20261031T215958Z/regenerated"
+      ],
+      "cwd": "/Users/admin/PublicationWork/batch-2026-10-31b/p-logistics/revised",
+      "exit_status": 0,
+      "ok": true,
+      "elapsed_seconds": 5.3879,
+      "log": "logs/replay/20261031T215958Z/logs/14_generate_constant_gap_chains.log"
+    },
+    {
+      "label": "regenerated_verify_constant_gap_chains",
+      "argv": [
+        "/Users/admin/.cache/uv/builds-v0/.tmpG9drH0/bin/python3",
+        "-B",
+        "-I",
+        "-S",
+        "/Users/admin/PublicationWork/batch-2026-10-31b/p-logistics/revised/verification/verify_constant_gap_chains.py",
+        "--data",
+        "/Users/admin/PublicationWork/batch-2026-10-31b/p-logistics/revised/logs/replay/20261031T215958Z/regenerated",
+        "--report",
+        "/Users/admin/PublicationWork/batch-2026-10-31b/p-logistics/revised/logs/replay/20261031T215958Z/regenerated_verifier_reports/constant_gap_chain_verification.json"
+      ],
+      "cwd": "/Users/admin/PublicationWork/batch-2026-10-31b/p-logistics/revised",
+      "exit_status": 0,
+      "ok": true,
+      "elapsed_seconds": 0.7757,
+      "log": "logs/replay/20261031T215958Z/logs/15_regenerated_verify_constant_gap_chains.log"
+    },
+    {
+      "label": "generate_broom_exact",
+      "argv": [
+        "/Users/admin/.cache/uv/builds-v0/.tmpG9drH0/bin/python3",
+        "-B",
+        "-I",
+        "/Users/admin/PublicationWork/batch-2026-10-31b/p-logistics/revised/src/broom_exact.py",
+        "--out",
+        "/Users/admin/PublicationWork/batch-2026-10-31b/p-logistics/revised/logs/replay/20261031T215958Z/regenerated",
+        "2",
+        "3",
+        "4"
+      ],
+      "cwd": "/Users/admin/PublicationWork/batch-2026-10-31b/p-logistics/revised",
+      "exit_status": 0,
+      "ok": true,
+      "elapsed_seconds": 2.3684,
+      "log": "logs/replay/20261031T215958Z/logs/16_generate_broom_exact.log"
+    },
+    {
+      "label": "regenerated_verify_exact_certificates",
+      "argv": [
+        "/Users/admin/.cache/uv/builds-v0/.tmpG9drH0/bin/python3",
+        "-B",
+        "-I",
+        "-S",
+        "/Users/admin/PublicationWork/batch-2026-10-31b/p-logistics/revised/verification/verify_exact_certificates.py",
+        "--data",
+        "/Users/admin/PublicationWork/batch-2026-10-31b/p-logistics/revised/logs/replay/20261031T215958Z/regenerated",
+        "--report",
+        "/Users/admin/PublicationWork/batch-2026-10-31b/p-logistics/revised/logs/replay/20261031T215958Z/regenerated_verifier_reports/certificate_verification.json"
+      ],
+      "cwd": "/Users/admin/PublicationWork/batch-2026-10-31b/p-logistics/revised",
+      "exit_status": 0,
+      "ok": true,
+      "elapsed_seconds": 0.1107,
+      "log": "logs/replay/20261031T215958Z/logs/17_regenerated_verify_exact_certificates.log"
+    },
+    {
+      "label": "regenerated_verify_coverage_certificates",
+      "argv": [
+        "/Users/admin/.cache/uv/builds-v0/.tmpG9drH0/bin/python3",
+        "-B",
+        "-I",
+        "-S",
+        "/Users/admin/PublicationWork/batch-2026-10-31b/p-logistics/revised/verification/verify_coverage_certificates.py",
+        "--data",
+        "/Users/admin/PublicationWork/batch-2026-10-31b/p-logistics/revised/logs/replay/20261031T215958Z/regenerated",
+        "--report",
+        "/Users/admin/PublicationWork/batch-2026-10-31b/p-logistics/revised/logs/replay/20261031T215958Z/regenerated_verifier_reports/coverage_certificate_verification.json"
+      ],
+      "cwd": "/Users/admin/PublicationWork/batch-2026-10-31b/p-logistics/revised",
+      "exit_status": 0,
+      "ok": true,
+      "elapsed_seconds": 0.2024,
+      "log": "logs/replay/20261031T215958Z/logs/18_regenerated_verify_coverage_certificates.log"
+    },
+    {
+      "label": "negative_controls",
+      "argv": [
+        "/Users/admin/.cache/uv/builds-v0/.tmpG9drH0/bin/python3",
+        "-B",
+        "-I",
+        "/Users/admin/PublicationWork/batch-2026-10-31b/p-logistics/revised/verification/negative_controls.py",
+        "--data",
+        "/Users/admin/PublicationWork/batch-2026-10-31b/p-logistics/revised/data",
+        "--report",
+        "/Users/admin/PublicationWork/batch-2026-10-31b/p-logistics/revised/logs/replay/20261031T215958Z/negative_controls.json"
+      ],
+      "cwd": "/Users/admin/PublicationWork/batch-2026-10-31b/p-logistics/revised",
+      "exit_status": 0,
+      "ok": true,
+      "elapsed_seconds": 1.7132,
+      "log": "logs/replay/20261031T215958Z/logs/19_negative_controls.log"
+    }
+  ],
+  "regenerated_vs_shipped": {
+    "small_tree_benchmark.json": {
+      "fields_compared": 30,
+      "equal": true
+    },
+    "small_tree_benchmark.csv": {
+      "rows_compared": 192,
+      "equal": true
+    },
+    "small_tree_exact_certificates.json": {
+      "records_compared": 192,
+      "optimum_value_mismatches": [],
+      "records_with_different_potentials (informational)": 1,
+      "records_with_different_attaining_cycles (informational)": 0
+    },
+    "coverage_equality_checks.json": {
+      "records_compared": 100,
+      "summary_equal": true,
+      "optimum_or_criterion_mismatches": [],
+      "records_with_different_potentials (informational)": 15
+    },
+    "independent_checks.json": {
+      "compared": "entire document",
+      "equal": true
+    },
+    "structural_audit_checks.json": {
+      "compared": "entire document",
+      "equal": true
+    },
+    "short_cycle_budget_checks.json": {
+      "compared": "entire document",
+      "equal": true
+    },
+    "period_budget_limit.csv": {
+      "compared": "bytes",
+      "equal": true
+    },
+    "regenerated certificate_verification.json": {
+      "stable_counts_equal": true,
+      "informational_differences": {}
+    },
+    "regenerated coverage_certificate_verification.json": {
+      "stable_counts_equal": true,
+      "informational_differences": {}
+    }
+  },
+  "negative_controls": {
+    "status": "PASS",
+    "controls": 13,
+    "verifier_runs": 30,
+    "rejections_confirmed": 26,
+    "pristine_acceptances_confirmed": 4,
+    "failures": [],
+    "source_data": "/Users/admin/PublicationWork/batch-2026-10-31b/p-logistics/revised/data"
+  },
+  "scope": "The listed finite checks and certificates only; no formal proof or priority certificate. Dual potentials and attaining cycles are not unique and are not required to match the shipped files; optimum values and summary counts are."
+}

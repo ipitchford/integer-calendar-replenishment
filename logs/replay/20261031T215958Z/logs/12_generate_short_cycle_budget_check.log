@@ -1,0 +1,36 @@
+$ /Users/admin/.cache/uv/builds-v0/.tmpG9drH0/bin/python3 -B -I /Users/admin/PublicationWork/batch-2026-10-31b/p-logistics/revised/verification/short_cycle_budget_check.py --out /Users/admin/PublicationWork/batch-2026-10-31b/p-logistics/revised/logs/replay/20261031T215958Z/regenerated
+
+STDOUT:
+{
+  "binary_cycle_enumeration_cases": 110,
+  "finite_period_cases": 3464,
+  "finite_budget_cases": 3464,
+  "star_sizes": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    32,
+    64,
+    128
+  ],
+  "all_exact_checks_passed": true,
+  "scope": "Synthetic exact arithmetic; unrestricted star optimum known exactly."
+}
+
+STDERR:

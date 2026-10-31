@@ -1,0 +1,223 @@
+{
+ "schemaVersion": "1.0",
+ "provenance": "Compiled 31 October 2026 for release 1.0.0-candidate from the producer novelty gate (novelty/novelty_report.md, structural_prior_art.md), the lead's corpus and thesis check, and the review-round searches (novelty/priority_addendum_2026-10-31.md). It documents the scrutiny performed, not historical priority.",
+ "contributionMap": [
+  {
+   "claim": "1/ln 2 integer-calendar guarantee for monotone submodular costs and trees (improves factor 2 of Bosman et al. 2022 against the unrestricted optimum)",
+   "unit": "statement",
+   "paperLocation": "Theorem 1; Corollary 1",
+   "searches": [
+    {
+     "date": "2026-10-31",
+     "query": "producer novelty gate: \"fixed turnover\" \"1.44\"; \"replenishment\" \"randomized\" \"power-of-two\"; \"submodular\" \"replenishment\" \"maximum\" \"interval\"; Han Tyan harmonic period assignment (full list in novelty/novelty_report.md)",
+     "corpus": "two web engines, Exa, arXiv, publisher pages, university repositories (novelty/novelty_report.md)"
+    },
+    {
+     "date": "2026-10-31",
+     "query": "\"fixed turnover times\" approximation; Hermansen replenishment thesis (web, Crossref, arXiv, Semantic Scholar); Semantic Scholar forward citations of Bosman et al. 2022; replenishment fixed turnover tree \"1.44\" OR \"ln 2\"; Evidence Press feed (207 releases) and batch folders",
+     "corpus": "web search, Crossref API, arXiv API, Semantic Scholar, DTU supervision pages, evidencepress.org feed"
+    },
+    {
+     "date": "2026-10-31",
+     "query": "review-requested positioning: Roundy 1985/1989; Chan-Chin 1992/1993; pinwheel real periods; multilevel aggregation / JRP with deadlines; submodular JRP; Bosman 2019 thesis; Bosman-Olver 2020; Han-Lin distance-constrained scheduling; constant-gap / harmonic integer period mixtures",
+     "corpus": "Crossref, DataCite, arXiv, Semantic Scholar, CWI repository, open full texts"
+    }
+   ],
+   "closestPriorWork": "Bosman et al. 2022 (factor 2, periodic outputs); Bosman 2019 thesis (same); Roundy 1989 and Teo-Bertsimas 2001 (1/ln 2 rounding in lot sizing, upward rounding); unobtained Hermansen 2025 MSc thesis",
+   "verdict": "new-in-bounded-search"
+  },
+  {
+   "claim": "Rounding event times (not periods) of shared harmonic clocks to integer days, preserving nesting and maximum gaps",
+   "unit": "method",
+   "paperLocation": "Section 3.2, Lemma 2",
+   "searches": [
+    {
+     "date": "2026-10-31",
+     "query": "producer novelty gate: \"fixed turnover\" \"1.44\"; \"replenishment\" \"randomized\" \"power-of-two\"; \"submodular\" \"replenishment\" \"maximum\" \"interval\"; Han Tyan harmonic period assignment (full list in novelty/novelty_report.md)",
+     "corpus": "two web engines, Exa, arXiv, publisher pages, university repositories (novelty/novelty_report.md)"
+    },
+    {
+     "date": "2026-10-31",
+     "query": "review-requested positioning: Roundy 1985/1989; Chan-Chin 1992/1993; pinwheel real periods; multilevel aggregation / JRP with deadlines; submodular JRP; Bosman 2019 thesis; Bosman-Olver 2020; Han-Lin distance-constrained scheduling; constant-gap / harmonic integer period mixtures",
+     "corpus": "Crossref, DataCite, arXiv, Semantic Scholar, CWI repository, open full texts"
+    }
+   ],
+   "closestPriorWork": "Real-period pinwheel (Kawamura; Fujiwara et al. 2026, abstract); Han-Lin distance-constrained scheduling (not inspected); Han-Tyan sweep via Diaz-Ramirez et al. 2013",
+   "verdict": "partially-known-cited"
+  },
+  {
+   "claim": "Exact price 1/ln 2 of a global cycle at most tau_max; tightness of the algorithm on trees",
+   "unit": "statement",
+   "paperLocation": "Theorems 6-7, eq. (29), Corollary 2",
+   "searches": [
+    {
+     "date": "2026-10-31",
+     "query": "producer novelty gate: \"fixed turnover\" \"1.44\"; \"replenishment\" \"randomized\" \"power-of-two\"; \"submodular\" \"replenishment\" \"maximum\" \"interval\"; Han Tyan harmonic period assignment (full list in novelty/novelty_report.md)",
+     "corpus": "two web engines, Exa, arXiv, publisher pages, university repositories (novelty/novelty_report.md)"
+    },
+    {
+     "date": "2026-10-31",
+     "query": "review-requested positioning: Roundy 1985/1989; Chan-Chin 1992/1993; pinwheel real periods; multilevel aggregation / JRP with deadlines; submodular JRP; Bosman 2019 thesis; Bosman-Olver 2020; Han-Lin distance-constrained scheduling; constant-gap / harmonic integer period mixtures",
+     "corpus": "Crossref, DataCite, arXiv, Semantic Scholar, CWI repository, open full texts"
+    }
+   ],
+   "closestPriorWork": "Chan-Chin single-integer reduction density threshold ln 2 (feasibility analogue); Liu-Layland",
+   "verdict": "partially-known-cited"
+  },
+  {
+   "claim": "Constant-gap harmonic calendars: 1.60010 <= rho_H <= 1.60139; 12/7 and 48/29 mixtures",
+   "unit": "statement",
+   "paperLocation": "Section 7, Theorem 9",
+   "searches": [
+    {
+     "date": "2026-10-31",
+     "query": "review-requested positioning: Roundy 1985/1989; Chan-Chin 1992/1993; pinwheel real periods; multilevel aggregation / JRP with deadlines; submodular JRP; Bosman 2019 thesis; Bosman-Olver 2020; Han-Lin distance-constrained scheduling; constant-gap / harmonic integer period mixtures",
+     "corpus": "Crossref, DataCite, arXiv, Semantic Scholar, CWI repository, open full texts"
+    }
+   ],
+   "closestPriorWork": "Bosman et al. 2022 (factor 2 with dyadic periods); Chan-Chin double-integer reduction (feasibility)",
+   "verdict": "new-in-bounded-search"
+  },
+  {
+   "claim": "Exact two-edge optimum, divisibility/lcm equality criteria, pooled bound, cycle-budget profile, broom gap",
+   "unit": "statement",
+   "paperLocation": "Theorems 2-5, 8; Section 5.3 Remark",
+   "searches": [
+    {
+     "date": "2026-10-31",
+     "query": "producer novelty gate: \"fixed turnover\" \"1.44\"; \"replenishment\" \"randomized\" \"power-of-two\"; \"submodular\" \"replenishment\" \"maximum\" \"interval\"; Han Tyan harmonic period assignment (full list in novelty/novelty_report.md)",
+     "corpus": "two web engines, Exa, arXiv, publisher pages, university repositories (novelty/novelty_report.md)"
+    },
+    {
+     "date": "2026-10-31",
+     "query": "review-requested positioning: Roundy 1985/1989; Chan-Chin 1992/1993; pinwheel real periods; multilevel aggregation / JRP with deadlines; submodular JRP; Bosman 2019 thesis; Bosman-Olver 2020; Han-Lin distance-constrained scheduling; constant-gap / harmonic integer period mixtures",
+     "corpus": "Crossref, DataCite, arXiv, Semantic Scholar, CWI repository, open full texts"
+    }
+   ],
+   "closestPriorWork": "Bosman et al. pseudopolynomial line DP; Anily-Glass-Hassin maintenance (not read in full)",
+   "verdict": "new-in-bounded-search"
+  }
+ ],
+ "sourcesReadInFull": [
+  {
+   "citation": "Bosman et al., Algorithmica 84 (2022), doi:10.1007/s00453-022-00974-4",
+   "usedFor": "Model, factor 2, periodic restriction, open question",
+   "readWhat": "Open-access full text (CWI)",
+   "date": "2026-10-31",
+   "evidenceLocator": "manuscript Section 1"
+  },
+  {
+   "citation": "Bosman, PhD thesis, VU Amsterdam (2019), ir.cwi.nl/pub/29320",
+   "usedFor": "Priority: Chapter 3 contains factor 2 and same open question, no 1/ln 2",
+   "readWhat": "Chapter 3 full text",
+   "date": "2026-10-31",
+   "evidenceLocator": "novelty/priority_addendum_2026-10-31.md"
+  },
+  {
+   "citation": "Diaz-Ramirez et al., J. Appl. Res. Technol. 11 (2013), doi:10.1016/S1665-6423(13)71551-7",
+   "usedFor": "Han-Tyan harmonic specialisation sweep",
+   "readWhat": "Author-hosted full text, Section IV.I, Algorithm 2",
+   "date": "2026-10-31",
+   "evidenceLocator": "novelty/novelty_report.md section H"
+  },
+  {
+   "citation": "Teo and Bertsimas, Oper. Res. 49 (2001), doi:10.1287/opre.49.4.599.11222",
+   "usedFor": "Logarithmic shift; upward rounding",
+   "readWhat": "MIT-hosted full text, Sections 2.3 and 3",
+   "date": "2026-10-31",
+   "evidenceLocator": "novelty/novelty_report.md"
+  },
+  {
+   "citation": "Federgruen and Zheng, Oper. Res. 40 (1992) and Manag. Sci. 39 (1993)",
+   "usedFor": "Submodular JRP; power-of-two with interval caps",
+   "readWhat": "Columbia-hosted full texts",
+   "date": "2026-10-31",
+   "evidenceLocator": "novelty/novelty_report.md"
+  }
+ ],
+ "limitationTriage": [
+  {
+   "limitation": "Hermansen 2025 MSc thesis not inspected",
+   "closingQuestion": "Does it contain an equivalent or stronger tree result?",
+   "triedOrSearched": "Crossref, arXiv, Semantic Scholar, web, supervisor pages; DTU catalogues behind bot verification (not bypassed)",
+   "estimatedCost": "one enquiry to the supervisors (owner approval needed)",
+   "decision": "OPEN",
+   "cheap": true,
+   "reasonOpen": "No permitted access route; sending an enquiry needs owner approval",
+   "whyNotClosedNow": "Outbound messages require owner authority; disclosed throughout"
+  },
+  {
+   "limitation": "Complexity of the tree problem (hardness)",
+   "closingQuestion": "Does a JRP-D hardness reduction transfer to rolling periodic windows?",
+   "triedOrSearched": "Literature (Bienkowski et al. 2015, Nonner-Souza 2009)",
+   "estimatedCost": "weeks",
+   "decision": "OPEN",
+   "cheap": false,
+   "reasonOpen": "New research"
+  },
+  {
+   "limitation": "rho_H known only within [1.60010, 1.60139]",
+   "closingQuestion": "Exact value?",
+   "triedOrSearched": "LP over chains to cap 512",
+   "estimatedCost": "days",
+   "decision": "OPEN",
+   "cheap": false,
+   "reasonOpen": "Requires an analytic infinite-chain argument"
+  },
+  {
+   "limitation": "General (non-dividing) constant-gap policies",
+   "closingQuestion": "Can they reach 1/ln 2?",
+   "triedOrSearched": "Reviewer brute force on 192 instances (best constant-gap within 1.111)",
+   "estimatedCost": "weeks",
+   "decision": "OPEN",
+   "cheap": false,
+   "reasonOpen": "New research"
+  },
+  {
+   "limitation": "sup OPT_T/L_T unknown in [1.204, 1/ln 2]",
+   "closingQuestion": "Exact supremum?",
+   "triedOrSearched": "Certified brooms M<=5",
+   "estimatedCost": "days",
+   "decision": "OPEN",
+   "cheap": false,
+   "reasonOpen": "New research"
+  },
+  {
+   "limitation": "Peak-day objective not controlled",
+   "closingQuestion": "Can offsets bound the min-max cost?",
+   "triedOrSearched": "Remark only",
+   "estimatedCost": "weeks",
+   "decision": "OPEN",
+   "cheap": false,
+   "reasonOpen": "Out of scope"
+  },
+  {
+   "limitation": "Han-Lin DCTS and Chan-Chin full texts not inspected",
+   "closingQuestion": "Do they contain the integer-slot projection?",
+   "triedOrSearched": "Metadata and abstracts; paywalled",
+   "estimatedCost": "hours with legitimate access",
+   "decision": "OPEN",
+   "cheap": true,
+   "reasonOpen": "No authorised full-text access",
+   "whyNotClosedNow": "Bypassing access controls is not permitted; credited as possible precedent"
+  }
+ ],
+ "extensionScout": {
+  "by": "Internal AI-assisted reviewers and the lead editor",
+  "date": "2026-10-31",
+  "proposals": [
+   "Constant-gap class guarantee below 2",
+   "Epsilon-trunk tightness",
+   "Frequency-bound integrality gap",
+   "Literature positioning (JRP-D, pinwheel)",
+   "Verifier hardening"
+  ],
+  "actions": [
+   "Theorem 9 with exact certificates",
+   "Corollary 2",
+   "Broom remark with certificates",
+   "Section 1.3 rewritten",
+   "assert-free verifiers, negative controls"
+  ]
+ }
+}
